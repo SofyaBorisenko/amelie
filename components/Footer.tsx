@@ -14,7 +14,6 @@ function Footer() {
         backgroundImage: `url('/images/footer-bg.webp')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        fontFamily: 'Nohemi',
         fontSize: '1.25rem',
         fontWeight: '300',
       }}
@@ -56,8 +55,8 @@ function Footer() {
           <a className='text-nowrap' href='/selection'>
             selection
           </a>
-          <a className='text-nowrap' href='/master-classes'>
-            master classes
+          <a className='text-nowrap' href='/blog'>
+            blog
           </a>
           <a className='text-nowrap' href='/order-online'>
             order online

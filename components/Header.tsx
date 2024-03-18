@@ -7,13 +7,7 @@ import {
 
 function Header() {
   return (
-    <header
-      className='p-5 md:text-sm lg:text-lg xl:text-xl'
-      style={{
-        fontFamily: 'Nohemi',
-        fontWeight: '300',
-      }}
-    >
+    <header className='p-5 md:text-sm lg:text-lg xl:text-xl font-light'>
       <div className='flex justify-between items-center text-off-white'>
         <div className='flex flex-row gap-5'>
           <a href='https://www.instagram.com/'>
@@ -46,7 +40,7 @@ function Header() {
             selection
           </a>
           <a href='/master-classes' className='hover:text-gray-300'>
-            master classes
+            blog
           </a>
           <a href='/order-online' className='hover:text-gray-300'>
             order online

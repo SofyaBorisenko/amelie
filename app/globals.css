@@ -5,18 +5,43 @@
 /* Font-face declaration for custom fonts */
 @font-face {
   font-family: 'Nohemi';
-  src: url('/public/fonts/Nohemi-Regular.woff2') format('woff2'),
-    url('/public/fonts/Nohemi-Medium.woff2') format('woff2'),
-    url('/public/fonts/Nohemi-Light.woff2') format('woff2'),
-    url('/public/fonts/Nohemi-ExtraLight.woff2') format('woff2');
+  src: 
+    /* IE6-IE8 */ url('/public/fonts/Nohemi-Regular.woff') format('woff'),
+    /* Modern Browsers */ url('/public/fonts/Nohemi-Regular.woff2')
+      format('woff2'),
+    /* Modern Browsers */ url('/public/fonts/Nohemi-Regular.ttf')
+      format('truetype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  font-family: 'Nohemi';
 }
 
 a {
   margin: 0;
 }
 
-h1 {
+h1,
+h2 {
   font-family: 'Miama Nueva', sans-serif;
   font-weight: normal;
   font-style: italic;
+  z-index: 1;
+}
+.highlighted-heading {
+  position: relative;
+}
+
+.highlighted-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #e5dfd8;
+  z-index: -1;
 }
